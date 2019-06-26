@@ -25,13 +25,13 @@ int main(void) {
 	if ((tmpA & 0x01) == 1) {
 	    cntavail--;
 	}
-	if ((tmpA & 0x02) == 1) {
+	if ((tmpA & 0x02) == 2) {
 	    cntavail--;
 	}	    
-	if ((tmpA & 0x04) == 1) {
+	if ((tmpA & 0x04) == 4) {
 	    cntavail--;
 	}	    
-	if ((tmpA & 0x08) == 1) {
+	if ((tmpA & 0x08) == 8) {
 	    cntavail--;
 	}
 	if (cntavail == 4) {
