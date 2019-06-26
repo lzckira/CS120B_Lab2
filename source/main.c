@@ -13,43 +13,20 @@
 #endif
 
 int main(void) {
-    DDRA = 0x00; // Configure port A's 8 pins as inputs
-    DDRC = 0xFF; // Configure port B's 8 pins as outputs
-    PORTA = 0x00; // Initialize PORTB output to 0’s
-    PORTC = 0x00; // Initialize PORTB output to 0’s
+    DDRA = 0x00; PORTA = 0xFF; // Configure port A's 8 pins as inputs
+    DDRB = 0x00; PORTB = 0xFF; // Configure port B's 8 pins as inputs
+    DDRC = 0x00; PORTC = 0xFF; // Configure port C's 8 pins as inputs
+    DDRD = 0xFF; PORTD = 0x00; // Configure port D's 8 pins as outputs, initialize to 0s
     unsigned char tmpA = 0x00;
-    unsigned char cntavail;
+    unsigned char tmpB = 0x00;
+    unsigned char tmpC = 0x00;
     while(1){
-	tmpA = PINA;
-	cntavail = 4;
-	if ((tmpA & 0x01) == 1) {
-	    cntavail--;
-	}
-	if ((tmpA & 0x02) == 1) {
-	    cntavail--;
-	}	    
-	if ((tmpA & 0x04) == 1) {
-	    cntavail--;
-	}	    
-	if ((tmpA & 0x08) == 1) {
-	    cntavail--;
-	}
-	if (cntavail == 4) {
-            PORTC = 0x04;
-	}
-	else if (cntavail == 3) {
-	    PORTC = 0x03;
-	}
-	else if (cntavail == 2) {
-  	    PORTC = 0x02;
-	}
-	else if (cntavail == 1) {
-	    PORTC = 0x01;
-	}
-	else{
-	    PORTC = 0x80;
-	}
+	
+	
+	
+	
+	
+	
     }
-
     return 1;
 }
