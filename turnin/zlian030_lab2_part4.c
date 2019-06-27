@@ -1,7 +1,7 @@
 /*	Author: zlian030
  *      Partner(s) Name: Xiaojun He
  *  	Lab Section: 021
- *	Assignment: Lab #2  Exercise #3
+ *	Assignment: Lab #2  Exercise #4
  *	Exercise Description: [optional - include for your own benefit]
  *
  *	I acknowledge all content contained herein, excluding template or example
